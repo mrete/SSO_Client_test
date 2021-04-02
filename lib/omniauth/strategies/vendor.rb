@@ -4,7 +4,7 @@ module OmniAuth
       option :name, :vendor
 
       option :client_options, {
-        site: "http://localhost:3000",
+        site: "https://whs-dev.herokuapp.com",
         authorize_path: "/oauth/authorize"
       }
 
