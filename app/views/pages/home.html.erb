@@ -1,1 +1,13 @@
-<h1>Hello world!</h1>
+<h1>Vendors App</h1>
+<div class="field">
+  <%= label_tag :name %><br />
+  <%= text_field_tag :name, params[:name] %>
+</div>
+<div class="field">
+  <%= label_tag :password %><br />
+  <%= password_field_tag :password %>
+</div>
+<div class="actions"><%= submit_tag "Log In" %></div>
+<br>
+
+<%= button_to "Sign In with GHIN", "/auth/vendor?scope=read", method: :post, style: "background-color:#4CAF50" %>
