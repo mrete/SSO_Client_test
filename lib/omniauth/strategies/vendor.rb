@@ -4,7 +4,7 @@ module OmniAuth
       option :name, :vendor
 
       option :client_options, {
-        site: "http://ghin-stage.hcp2020.com",
+        site: "https://api-stage.hcp2020.com",
         authorize_path: "/oauth/authorize"
       }
 
