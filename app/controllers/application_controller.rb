@@ -10,8 +10,9 @@ class ApplicationController < ActionController::Base
   end
   
   def authentication_callback
-    auth = request.env['omniauth.auth']
-    render json: auth["extra"].to_json
+    # auth = request.env['omniauth.auth']
+    # render json: auth["extra"].to_json
+    render json: "Hello World".to_json
   end
   
   def get_user_information
