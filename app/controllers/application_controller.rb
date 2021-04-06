@@ -26,8 +26,8 @@ private
   end
 
   def access_token
-    if session[:access_token]
-      @access_token ||= OAuth2::AccessToken.new(oauth_client, session[:access_token])
+    if request.env['omniauth.auth']["credentials"]["token"]
+      @access_token ||= OAuth2::AccessToken.new(oauth_client,request.env['omniauth.auth']["credentials"]["token"])
     end
   end
 
