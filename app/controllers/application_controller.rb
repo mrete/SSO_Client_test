@@ -8,13 +8,7 @@ class ApplicationController < ActionController::Base
       redirect_to root_url, alert: "Access token expired, try signing in again."
     end
   end
-  
-  def authentication_callback
-    # auth = request.env['omniauth.auth']
-    # render json: auth["extra"].to_json
-    render json: "Hello World".to_json
-  end
-  
+
   def get_user_information
     @user = access_token.get("/api/v1/get_user_information").parsed if access_token
     render json: @user.to_json

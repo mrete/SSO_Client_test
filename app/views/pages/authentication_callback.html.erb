@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3.ex1 {
+  padding-left: 15%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  /* border-collapse: collapse; */
+  width:70%;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th{
+  background-color: #EFF0F2;
+}
+</style>
+</head>
+<br>
+  <div class="col-md-12 text-center" style="padding-left: 15%;">
+    <%= button_to "Back", "https://fierce-sands-35954.herokuapp.com/", method: :get, class: "btn btn-block mybtn btn-primary tx-tfm", style:" border-radius: 20px; width: 100px;"%> 
+  </div>
+<body>
+  <div class="container" style="margin-top: 100px">
+    <div class="row">
+      <div class="col-md-5 mx-auto">
+        <div id="first" style="background-color: white">
+          <div class="myform form" style="padding: 30px">
+            <div class="logo mb-3">
+              <div class="col-md-12 text-center" style="margin-bottom: 50px">
+                <h1>Sample App</h1>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<table class="center">
+  <h3 class="ex1">Golfer Details</h3>
+  <br>
+  <tr>
+    <th>GHIN Number</th>
+    <td><%= @ghin_number %></td>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <td><%= @golfer_name %></td>
+  </tr>
+  <tr>
+    <th>H.I.</th>
+    <td><%= @golfer_hi %></td>
+  </tr>
+</table>
+</body>
+</html>
