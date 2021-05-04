@@ -4,7 +4,7 @@ module OmniAuth
       option :name, :vendor
 
       option :client_options, {
-        site: "https://api-stage.hcp2020.com",
+        site: "https://whs-dev.herokuapp.com",
         authorize_path: "/oauth/authorize"
       }
 
